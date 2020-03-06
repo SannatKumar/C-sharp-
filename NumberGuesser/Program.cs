@@ -31,8 +31,14 @@ namespace NumberGuesser
             //Print the welcome statement 
             Console.WriteLine("Hello {0}, Let's play a game...", inputName);
 
-            //Initialize correct number
-            int correctNumber = 7;
+            while (true) { 
+
+            //Create a random Objet
+            Random random = new Random();
+
+            //Init Correct Number
+
+            int correctNumber = random.Next(1, 10);
 
             //Initialize guess variable
             int guess = 0;
@@ -61,8 +67,6 @@ namespace NumberGuesser
 
                     //Keep going
                     continue;
-
-
                 }
                 
                 //Cast to int and put it in guess
@@ -99,11 +103,27 @@ namespace NumberGuesser
             //Print the correct results
             Console.WriteLine("This is the Right Number.");
 
+                //Ask to play again
+                Console.WriteLine("Play Again? [Y or N}");
 
-            //
-            //Print the value
-            Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
+                //Get answer
+                string answer = Console.ReadLine().ToUpper();
 
+                if (answer == "Y")
+                {
+                    continue;
+                }
+                else if(answer == "N")
+                {
+                    return;
+                }
+                else
+                {
+                    return;
+                }
+
+
+            }
 
 
         }
