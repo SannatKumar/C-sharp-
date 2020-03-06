@@ -47,6 +47,8 @@ namespace NumberGuesser
                 string inputUser = Console.ReadLine();
 
                 //Input Validation that it is a number
+                if(!int.TryParse(inputUser, out guess)) 
+                { 
                 //change text color
                 Console.ForegroundColor = ConsoleColor.Red;
 
@@ -57,11 +59,17 @@ namespace NumberGuesser
                 //Bring Back the color
                 Console.ResetColor();
 
+                    //Keep going
+                    continue;
+
+
+                }
+                
                 //Cast to int and put it in guess
                 guess = Int32.Parse(inputUser);
 
                 //Check the guess if matches the correctNumber
-                if(guess!= correctNumber)
+                if (guess!= correctNumber)
                 {
                     //change text color
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -71,6 +79,9 @@ namespace NumberGuesser
 
                     //Bring Back the color
                     Console.ResetColor();
+
+                    //Keep going
+                    continue;
                 }
 
                 //Change Text Colour
