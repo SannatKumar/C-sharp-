@@ -20,6 +20,9 @@ namespace classes
             account.MakeDeposit(100, DateTime.Now, "Friend Paid me Back");
             Console.WriteLine(account.Balance);
             Console.ReadKey();
+
+            Console.WriteLine(account.GetHistory());
+            Console.ReadKey();
         }
     }
 }
