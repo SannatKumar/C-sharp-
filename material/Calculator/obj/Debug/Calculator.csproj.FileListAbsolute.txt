@@ -1,0 +1,7 @@
+D:\Csharp\material\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+D:\Csharp\material\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Csharp\material\Calculator\bin\Debug\Calculator.exe.config
+D:\Csharp\material\Calculator\bin\Debug\Calculator.exe
+D:\Csharp\material\Calculator\bin\Debug\Calculator.pdb
+D:\Csharp\material\Calculator\obj\Debug\Calculator.exe
+D:\Csharp\material\Calculator\obj\Debug\Calculator.pdb
