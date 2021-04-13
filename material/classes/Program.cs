@@ -10,6 +10,9 @@ namespace classes
     {
         static void Main(string[] args)
         {
+            var account = new BankAccount("Raj Kumar", 1000);
+            Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance}");
+            Console.ReadKey();
         }
     }
 }
