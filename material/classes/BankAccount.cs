@@ -19,6 +19,14 @@ namespace classes
 
             }
 
+            //Constructor assigning the values
+
+            public BankAccount(string name, decimal initialBalance)
+            {
+                this.Owner = name;
+                this.Balance = initialBalance;
+            }
+
             public void MakeWithdrawl(decimal amount, DateTime date, string note)
             {
 
