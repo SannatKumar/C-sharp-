@@ -22,11 +22,13 @@ namespace Udemy_Basics
             //int faveNumber = Console.ReadLine();
 
             //Attempt 2: use explicit conversion
-            int faveNumber = (int)Console.ReadLine();
+            //int faveNumber = (int)Console.ReadLine();
 
             //Attempt 3: use Convert method
 
             int faveNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The number is " + faveNumber);
+            Console.ReadKey();
         }
     }
 }
